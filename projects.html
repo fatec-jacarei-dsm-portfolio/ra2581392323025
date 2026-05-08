@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="masthead">
+    <a href="index.html" class="masthead-title">Luis <span>Pereira</span></a>
+    <nav class="masthead-nav">
+      <a href="index.html">← Home</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Portfolio</h2>
+      </div>
+
+      <!-- Filter tags -->
+      <div class="filter-bar" id="filterBar">
+        <!-- Tags populated by script.js -->
+      </div>
+
+      <div class="archive-grid" id="archiveGrid">
+        <!-- Populated by script.js from projects.json -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Luis Pereira.</p>
+      <p><a href="index.html">← Back to Home</a></p>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
