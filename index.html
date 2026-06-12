@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Data Science & ML Engineering</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="masthead">
+    <a href="#" class="masthead-title">Luis <span>Pereira</span></a>
+    <nav class="masthead-nav">
+      <a href="#pitch">Pitch</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-badge">Software Engineer → ML Engineer</div>
+      <h1 class="hero-title">Building Intelligent Data Systems</h1>
+      <p class="hero-sub">Sou programador e estou fazendo a transição para Engenheiro de Machine Learning. Este é um
+        portfólio dos meus projetos pessoais e acadêmicos.</p>
+    </section>
+
+    <!-- Pitch -->
+    <section id="pitch" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Pitch</h2>
+      </div>
+
+      <div class="video-frame-outer">
+        <div class="video-label-strip">
+          <span>PRESENTATION 2026</span>
+          <span>YOUTUBE / EMBED</span>
+        </div>
+        <div class="video-placeholder" id="videoPlaceholder">
+          <div class="video-inner">
+            <div class="play-icon">▶</div>
+          </div>
+        </div>
+        <div class="video-caption">
+          Um rápido video sobre mim, meus objetivos e jornada.
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Sobre</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-body">
+          <p>
+            <strong>Olá! </strong>Sou graduando da Fatec Jacareí em Desenvolvimento de Software Multiplataforma (Turma
+            de
+            2023-2).
+          </p>
+          <p>
+            Estagiei e fui efetivado na Ericsson Telecomunicações desde fevereiro de 2024, onde atuo como
+            desenvolvedor de software no shopfloor. Do segundo semestre de 2025 para hoje, venho desenvolvendo soluções
+            com aprendizagem de máquina no shopfloor, integrando modelos à lakehouse e fornecendo outputs para softwares
+            em cloud.
+          </p>
+          <p>
+            Estou aprofundando meus conhecimentos em MLOps e engenharia de dados, com foco em cloud computing e
+            disponibilização de modelos em produção
+          </p>
+        </div>
+
+        <div class="about-sidebar">
+          <div class="sidebar-block">
+            <h4>Expertise</h4>
+            <ul>
+              <li>Software Engineering</li>
+              <li>.NET, C# & VB.NET</li>
+              <li>Machine Learning</li>
+              <li>Data Pipelines</li>
+              <li>Statistical Analysis</li>
+            </ul>
+          </div>
+          <div class="sidebar-block">
+            <h4>Currently Studying</h4>
+            <ul>
+              <li>Deep Learning</li>
+              <li>MLOps & Deployment</li>
+              <li>Feature Engineering</li>
+            </ul>
+          </div>
+          <div class="sidebar-block">
+            <h4>Contatos</h4>
+            <ul>
+              <li><a href="gustavo.s.b.pereira@gmail.com">gustavo.s.b.pereira@gmail.com</a></li>
+              <li><a href="https://github.com/l-gustavo-barbosa">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/luisgsbpereira/">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Principais Projetos</h2>
+      </div>
+      <p class="section-intro">
+        Uma seleção de projetos universitários e profissionais que demonstram meu desenvolvimento acadêmico e
+        profissional.
+      </p>
+
+      <div class="carousel-wrapper">
+        <div class="carousel-viewport" id="carouselViewport">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Populated by script.js from projects.json -->
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="prevBtn" aria-label="Previous">←</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn next" id="nextBtn" aria-label="Next">→</button>
+        </div>
+      </div>
+
+      <div class="projects-cta">
+        <a href="projects.html" class="cta-link">Todos os projetos →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Luis Pereira.</p>
+      <p>Fatec Jacareí</p>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
