@@ -12,4 +12,4 @@
 
 🎤 2DSM - [Vídeo](LINK_VIDEO_2DSM)  
 🎤 4DSM - [Vídeo](LINK_VIDEO_4DSM)  
-🎤 6DSM - [Vídeo](LINK_VIDEO_6DSM)
+🎤 6DSM - [Vídeo]([LINK_VIDEO_6DSM](https://youtu.be/VMPN_nuhq-c))
